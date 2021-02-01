@@ -13,7 +13,7 @@
 }
 
 .media-grid:hover .media-img {
-    opacity: 50%;
+    opacity: 0.5;
     transform: scale(1.03);
     cursor: pointer;
 }
@@ -30,6 +30,6 @@
 }
 
 .media-grid:hover i {
-    opacity: 100%;
+    opacity: 1;
     cursor: pointer;
 }
