@@ -24,16 +24,6 @@
     transition: .3s ease;
 }
 
-.project-grid:hover > .project-grid-overlay {
-    opacity: 100%;
-    top: 20%;
-}
-
-.project-grid:hover > .project-grid-buttons {
-    opacity: 100%;
-    bottom: 10%;
-}
-
 .project-grid-buttons {
     position: absolute;
     bottom: 5%;
