@@ -27,7 +27,7 @@ function App() {
           <Banner bannerImg='./banner-image.jpg' />
           <Navbar />
           <Wrapper >
-            <Route exact path="/" >
+            <Route path="/" >
               <About />
               <Projects />
               <Media />
