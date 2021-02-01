@@ -1,0 +1,29 @@
+.banner {
+    height: calc(100vh + 88.88px);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.banner-title {
+    position: absolute;
+    top: 25%;
+    z-index: 3;
+    text-align: center;
+    width: 100%;
+}
+
+.banner-name {
+    color: #008cff;
+    text-decoration: none;
+}
+
+.view-work {
+    position: absolute;
+    top: calc(100vh - 220px);
+    text-align: center;
+    width: 100%;
+}

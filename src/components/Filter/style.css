@@ -1,0 +1,75 @@
+.filter-active {
+    background: #0097de;
+}
+
+ul.animatedunderlinemenu {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 10px;
+    /* add spacing between UL and rest of content for demo purposes */
+    padding: 0;
+    text-align: center;
+    /* enter "left", "right", or "center" to orient the menu accordingly */
+    /* use google custom font "Lato" */
+    z-index: 0;
+    font-size: 15px;
+}
+
+ul.animatedunderlinemenu li {
+    display: inline;
+    margin-right: 25px;
+    /* spacing between each menu item */
+    z-index: 0;
+}
+
+ul.animatedunderlinemenu li a {
+    position: relative;
+    display: inline-block;
+    color: white;
+    padding: 2px 3px;
+    padding-bottom: 8px;
+    /*spacing between each menu item and underline beneath it */
+    text-decoration: none;
+    margin-bottom: 20px;
+    /* spacing between A elements, relevant when menu becomes multi-lined */
+    letter-spacing: .1em;
+}
+
+ul.animatedunderlinemenu li a:after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #0097de;
+    top: 100%;
+    left: 0;
+    opacity: 0;
+    z-index: -1;
+    -wekkit-transition: all .2s;
+    transition: all .2s;
+}
+
+ul.animatedunderlinemenu li a:hover:after {
+    width: 100%;
+    /* increase underline width to 100% */
+    opacity: 1;
+}
+
+/* //// Expand underline upwards effect //// */
+
+ul.animatedunderlinemenu.expandup li a:after {
+    background: #0097de;
+    top: auto;
+    bottom: 0;
+    -webkit-transition: width .2s, opacity .2s, height .2s .2s;
+    transition: width .2s, opacity .2s, height .2s .2s;
+}
+
+ul.animatedunderlinemenu.expandup li a:hover:after {
+    width: 100%;
+    /* increase underline width to 100% */
+    height: 100%;
+    /* increase underline height to 100% */
+    opacity: 1;
+}

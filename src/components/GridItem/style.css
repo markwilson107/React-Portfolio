@@ -1,0 +1,43 @@
+.project-grid {
+    position: relative;
+    text-align: center;
+    color: white;
+    height:100%;
+    overflow: hidden;
+}
+
+.project-grid img {
+    transition: .3s ease;
+}
+
+.project-grid:hover img {
+    opacity: 30%;
+    transform: scale(1.02); 
+}
+
+.project-grid:hover .project-grid-overlay {
+    opacity: 100%;
+    top: 20%;
+}
+
+.project-grid:hover .project-grid-buttons {
+    opacity: 100%;
+    bottom: 10%;
+}
+
+.project-grid-overlay {
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    width: calc(100% - 20px);
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.project-grid-buttons {
+    position: absolute;
+    bottom: 5%;
+    left: calc(50% - 78px);
+    opacity: 0;
+    transition: .3s ease;
+}

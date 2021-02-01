@@ -1,0 +1,35 @@
+.media-grid {
+    position: relative;
+    color: white;
+    height: 100%;
+    overflow: hidden;
+}
+
+.media-img {
+    width: 100%;
+    height: 100%;
+    transition: transform .3s ease;
+    transform: scale(1.01);
+}
+
+.media-grid:hover .media-img {
+    opacity: 50%;
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+.media-grid i {
+    position: absolute;
+    top: calc(50% - 22px);
+    left: calc(50% - 20px);
+    font-size: 40px;
+    color: white;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity .3s ease;
+}
+
+.media-grid:hover i {
+    opacity: 100%;
+    cursor: pointer;
+}
