@@ -6,14 +6,14 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 function GridItem(props) {
     return (
-        <div className="project-grid">
+        <div className="projectGrid">
             <img src={props.item.thumbnail} alt={props.item.name} style={{ width: "100%", height: "100%" }} />
-            <div className="project-grid-overlay" >
+            <div className="projectGridOverlay" >
                 <Typography variant="h6" >{props.item.name}</Typography>
                 <br />
                 <Typography variant="body2">{props.item.description}</Typography>
             </div>
-            <div className="project-grid-buttons">
+            <div className="projectGridButtons">
                 <ButtonGroup disableElevation variant="contained">
                     <Button target="_blank" href={props.item.url} rel="noopener">Demo</Button>
                     <Button target="_blank" href={props.item.github} rel="noopener">Github</Button>

@@ -1,4 +1,4 @@
-.project-grid {
+.projectGrid {
     position: relative;
     text-align: center;
     color: white;
@@ -6,16 +6,16 @@
     overflow: hidden;
 }
 
-.project-grid img {
+.projectGrid img {
     transition: .3s ease;
 }
 
-.project-grid:hover {
+.projectGrid:hover {
     opacity: 30%;
     transform: scale(1.02); 
 }
 
-.project-grid-overlay {
+.projectGridOverlay {
     padding: 10px;
     position: absolute;
     top: 15%;
@@ -24,7 +24,7 @@
     transition: .3s ease;
 }
 
-.project-grid-buttons {
+.projectGridButtons {
     position: absolute;
     bottom: 5%;
     left: calc(50% - 78px);
