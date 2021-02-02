@@ -8,8 +8,9 @@ import Container from '@material-ui/core/Container';
 // Components
 import GridItemMedia from '../components/GridItemMedia';
 import Modal from '../components/Modal';
-//API
-import mediaAPI from '../utils/mediaAPI' 
+//Utils
+import mediaAPI from '../utils/API/mediaAPI' 
+import { ModalContext } from "../utils/modalContext";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -38,23 +39,7 @@ const useStyles = makeStyles((theme) => ({
 const Media = () => {
   const classes = useStyles();
 
-  const [modalState, setModalState] = useState({ image: "" })
-
-  const [openModal, setOpenModal] = useState(false);
-
-  const handleModalOpen = () => {
-    setOpenModal(true);
-  };
-
-  const handleModalClose = () => {
-    setOpenModal(false);
-  };
-
-
-  const handleMediaClick = (index) => {
-    setModalState({ image: mediaAPI[index].image });
-    handleModalOpen();
-  }
+  let { handleModal } = React.useContext(ModalContext);
 
   return (
     <div className={`${classes.root} ${classes.spacing}`}>
@@ -67,7 +52,7 @@ const Media = () => {
           {
             mediaAPI.map((result, index) => (
               <Grid item xs={4} >
-                <Link onClick={() => handleMediaClick(index)}>
+                <Link onClick={() => handleModal("image", mediaAPI[index].image)}> 
                   <GridItemMedia item={result} />
                 </Link>
               </Grid>
@@ -75,7 +60,7 @@ const Media = () => {
           }
         </Grid>
       </Container>
-      <Modal open={openModal} onClose={handleModalClose} type="image" image={modalState.image} />
+      
     </ div>
   );
 };

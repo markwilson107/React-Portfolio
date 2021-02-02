@@ -13,6 +13,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 // Progress bar
 import ProgressBar from "@ramonak/react-progress-bar";
+// Utils
+import { ModalContext } from "../../utils/modalContext";
 
 const useStyles = makeStyles((theme) => ({
     center: {
@@ -26,6 +28,8 @@ const useStyles = makeStyles((theme) => ({
 function Bio(props) {
     const classes = useStyles();
 
+    let { handleModal } = React.useContext(ModalContext);
+
     const preventDefault = (event) => event.preventDefault();
 
     return (
@@ -37,7 +41,7 @@ function Bio(props) {
                         Hello, I am Mark Wilson, a Web Developer with a passion<br />
                         for creating high-quality, responsive, beautiful websites<br />
                         with the users experience being top priority.<br /><br />
-                            <Link href="#" onClick={preventDefault}>
+                            <Link style={{cursor: "pointer"}} onClick={() => {handleModal("pdf", './RESUME2020-MarkWilson.pdf')}}>
                                 <Tooltip title="Resume" placement="bottom">
                                     <DescriptionIcon style={{ color: "black", fontSize: 40 }} />
                                 </Tooltip>
@@ -67,7 +71,7 @@ function Bio(props) {
                         <Typography variant="body1">Node.js</Typography>
                         <ProgressBar completed={70} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
-                        <Typography variant="body1">React</Typography>
+                        <Typography variant="body1">React.js</Typography>
                         <ProgressBar completed={60} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
                         <Typography variant="body1">Adobe Suite

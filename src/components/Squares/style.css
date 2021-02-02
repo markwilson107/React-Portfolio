@@ -15,7 +15,6 @@
     left: 0;
     width: 100%;
     height: calc(100vh + 88.88px);
-    z-index: 9;
 }
 
 .bg-bubbles li {
@@ -30,6 +29,7 @@
     animation: square 25s infinite;
     -webkit-transition-timing-function: linear;
     transition-timing-function: linear;
+    z-index: 9;
 }
 
 .bg-bubbles li:nth-child(1) {

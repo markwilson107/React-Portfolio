@@ -5,12 +5,14 @@ import Typewriter from 'typewriter-effect';
 import { makeStyles } from '@material-ui/core/styles';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+//React scroll
+import {Link} from 'react-scroll'
 // Components
 import Squares from "../Squares";
 
 const useStyles = makeStyles((theme) => ({
     button: {
-        zIndex: 3,
+        zIndex: 11,
         marginTop: "40px"
     },
     typography: {
@@ -39,7 +41,7 @@ function Banner(props) {
                         }}
                     />
                 </Typography>
-                <Button className={classes.button} variant="contained">View my work</Button>
+                <Link to="aboutContainer" offset={1} spy={true} smooth={true}><Button className={classes.button} variant="contained">View my work</Button></Link>
             </div>
         </div>
     )

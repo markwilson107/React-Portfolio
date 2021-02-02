@@ -8,8 +8,8 @@ import Container from '@material-ui/core/Container';
 // Components
 import GridItem from '../components/GridItem';
 import Filter from '../components/Filter';
-// API
-import ProjectsAPI from '../utils/projectsAPI'
+// Utils
+import ProjectsAPI from '../utils/API/projectsAPI';
 
 const useStyles = makeStyles((theme) => ({
   root: {

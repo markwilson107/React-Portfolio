@@ -8,8 +8,9 @@ import Container from '@material-ui/core/Container';
 // Components
 import GridItemVideo from '../components/GridItemVideo';
 import Modal from '../components/Modal';
-//API
-import videoAPI from '../utils/videoAPI';
+// Utils
+import videoAPI from '../utils/API/videoAPI';
+import { ModalContext } from "../utils/modalContext";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -38,22 +39,7 @@ const useStyles = makeStyles((theme) => ({
 const Video = () => {
     const classes = useStyles();
 
-    const [modalState, setModalState] = useState({ video: "" })
-
-    const [openModal, setOpenModal] = useState(false);
-
-    const handleModalOpen = () => {
-        setOpenModal(true);
-    };
-
-    const handleModalClose = () => {
-        setOpenModal(false);
-    };
-
-    const handleVideoClick = (index) => {
-        setModalState({ video: videoAPI[index].url });
-        handleModalOpen();
-    }
+    let { handleModal } = React.useContext(ModalContext);
 
     return (
         <div className={`${classes.root} ${classes.spacing}`}>
@@ -68,14 +54,14 @@ const Video = () => {
                             if (result.id === 5)
                                 return (
                                     <Grid item xs={8} >
-                                        <Link onClick={() => handleVideoClick(index)}>
+                                        <Link onClick={() => handleModal("video", videoAPI[index].url)}>
                                             <GridItemVideo thumbnail={result.thumbnail} />
                                         </Link>
                                     </Grid>
                                 )
                             return (
                                 <Grid item xs={4} >
-                                    <Link onClick={() => handleVideoClick(index)}>
+                                    <Link onClick={() => handleModal("video", videoAPI[index].url)}>
                                         <GridItemVideo thumbnail={result.thumbnail} />
                                     </Link>
                                 </Grid>
@@ -84,7 +70,6 @@ const Video = () => {
                     }
                 </Grid>
             </Container>
-            <Modal open={openModal} onClose={handleModalClose} type="video" video={modalState.video} />
         </ div>
     );
 };

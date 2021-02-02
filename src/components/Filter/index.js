@@ -24,7 +24,7 @@ function Filter(props) {
         <li><a className={filterActive("css")} href="#" data-value="css" onClick={handleClick}>CSS</a></li>
         <li><a className={filterActive("javascript")} href="#" data-value="javascript" onClick={handleClick}>JavaScript</a></li>
         <li><a className={filterActive("nodejs")} href="#" data-value="nodejs" onClick={handleClick}>Node.js</a></li>
-        <li><a className={filterActive("react")} href="#" data-value="react" onClick={handleClick}>React</a></li>
+        <li><a className={filterActive("react")} href="#" data-value="react" onClick={handleClick}>React.js</a></li>
       </Typography>
     </ul>
   );
