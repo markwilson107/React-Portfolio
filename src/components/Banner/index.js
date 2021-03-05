@@ -35,7 +35,7 @@ function Banner(props) {
                 <Typography className={classes.typography} variant="body1">
                     <Typewriter
                         options={{
-                            strings: ['HTML  |  CSS |  JAVASCRIPT  |  NODE.JS  |  REACT', 'PHOTOSHOP  |  LIGHTROOM  |  PREMIERE PRO'],
+                            strings: ['HTML  |  CSS |  JAVASCRIPT  |  NODE.JS  |  REACT.JS', 'PHOTOSHOP  |  LIGHTROOM  |  PREMIERE PRO'],
                             autoStart: true,
                             loop: true,
                         }}

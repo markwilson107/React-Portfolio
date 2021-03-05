@@ -25,11 +25,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   spacing: {
-    paddingTop: '40px',
-    paddingBottom: '80px'
+    paddingBottom: '100px'
   },
   paddingBottom: {
-    paddingBottom: '60px'
+    paddingBottom: '100px'
   },
   white: {
     color: 'white'

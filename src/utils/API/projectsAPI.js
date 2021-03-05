@@ -1,6 +1,15 @@
 const ProjectsAPI =
   [
     {
+      id: "ED",
+      name: "Employee Directory",
+      description: "This is React application loads user data from randomuser.me and displays it in an sortable, filterable table.",
+      thumbnail: "./projects/ED.png",
+      url: "https://markwilson107.github.io/Employee-Directory/",
+      github: "https://github.com/markwilson107/Employee-Directory",
+      category: ["javascript", "html", "css", "reactjs"]
+    },
+    {
       id: "DS",
       name: "TCWA - Direct Ship",
       description: "Used to help TCWA staff keep track of requests sent from remote branches to the main warehouse.",
@@ -45,15 +54,15 @@ const ProjectsAPI =
       github: "https://github.com/markwilson107/Weather-Dashboard",
       category: ["javascript", "html", "css", "api"]
     },
-    {
-      id: "PG",
-      name: "Password Generator",
-      description: "Random password generator created using HTML, CSS, and Javascript.",
-      thumbnail: "./projects/PG.jpg",
-      url: "https://markwilson107.github.io/Password-Generator/",
-      github: "https://github.com/markwilson107/Password-Generator",
-      category: ["javascript", "html", "css"]
-    }
+    // {
+    //   id: "PG",
+    //   name: "Password Generator",
+    //   description: "Random password generator created using HTML, CSS, and Javascript.",
+    //   thumbnail: "./projects/PG.jpg",
+    //   url: "https://markwilson107.github.io/Password-Generator/",
+    //   github: "https://github.com/markwilson107/Password-Generator",
+    //   category: ["javascript", "html", "css"]
+    // }
 ];
 
 export default ProjectsAPI;

@@ -7,6 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
 // Components
 import GridItem from '../components/GridItem';
+import GridFeature from '../components/GridFeature';
 import Filter from '../components/Filter';
 // Utils
 import ProjectsAPI from '../utils/API/projectsAPI';
@@ -24,11 +25,14 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center'
   },
   spacing: {
-    paddingTop: '80px',
-    paddingBottom: '80px'
+    paddingTop: '100px',
+    paddingBottom: '100px'
   },
-  paddingBottom: {
-    paddingBottom: '60px'
+  paddingBottom60: { 
+    paddingBottom: '60px' 
+  },
+  paddingTop30: { 
+    paddingTop: '30px' 
   },
   white: {
     color: 'white'
@@ -38,28 +42,28 @@ const useStyles = makeStyles((theme) => ({
 const Projects = () => {
   const classes = useStyles();
 
-  const [filterState, setFilterState] = useState({type: "all"})
+  const [filterState, setFilterState] = useState({ type: "all" })
 
   return (
     <div id="projectsContainer" className={`${classes.root} ${classes.spacing}`}>
 
-      <Typography className={`${classes.center} ${classes.paddingBottom} ${classes.white}`} variant="h4">
+      <Typography className={`${classes.center} ${classes.paddingBottom60} ${classes.white}`} variant="h4">
         PROJECTS
       </Typography>
       <Container maxWidth="md">
         <Filter filterState={filterState} setFilterState={setFilterState} />
-        <Grid container spacing={0}>
-          {/* <Grid item xs={12} sm={12}>
-            <Paper className={classes.paper}>xs=6</Paper>
-          </Grid> */}
+        <Grid className={classes.paddingTop30} container spacing={0}>
+         <Grid item xs={12} sm={12}>
+         <GridFeature />
+          </Grid>
           {
             ProjectsAPI.map((result, index) => {
               if (result.category.indexOf(filterState.type) != -1 || filterState.type === "all")
-              return (
-              <Grid item xs={12} sm={6} md={4}>
-                <GridItem item={result} />
-              </Grid>
-              )
+                return (
+                  <Grid item xs={12} sm={6} md={4}>
+                    <GridItem item={result} />
+                  </Grid>
+                )
             })
           }
         </Grid>

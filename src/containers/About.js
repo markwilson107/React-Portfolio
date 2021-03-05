@@ -22,11 +22,11 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center'
     },
     spacing: {
-        paddingTop: '80px',
-        paddingBottom: '80px'
+        paddingTop: '100px',
+        paddingBottom: '100px'
     },
     paddingBottom: {
-        paddingBottom: '60px'
+        paddingBottom: '100px'
     }
 }));
 
