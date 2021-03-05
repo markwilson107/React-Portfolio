@@ -60,26 +60,26 @@ function Bio(props) {
                     </Grid>
                     <Grid item xs={12} md={6} >
                         <Typography variant="body1">HTML</Typography>
-                        <ProgressBar completed={80} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
+                        <ProgressBar completed={90} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
                         <Typography variant="body1">CSS</Typography>
-                        <ProgressBar completed={80} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
+                        <ProgressBar completed={90} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
                         <Typography variant="body1">Javascript</Typography>
-                        <ProgressBar completed={70} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
+                        <ProgressBar completed={80} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
                         <Typography variant="body1">Node.js</Typography>
-                        <ProgressBar completed={70} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
+                        <ProgressBar completed={80} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
                         <Typography variant="body1">React.js</Typography>
-                        <ProgressBar completed={60} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
+                        <ProgressBar completed={70} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />
                         <Typography variant="body1">Adobe Suite
                         <Tooltip disableFocusListener title="Photoshop &nbsp;|&nbsp; Lightroom &nbsp;|&nbsp; Premiere Pro" placement="right">
                                 <i className="mdi mdi-information" style={{ color: "#282828", marginLeft: "5px", cursor: "pointer" }} />
                             </Tooltip>
                         </Typography>
-                        <ProgressBar completed={60} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
+                        <ProgressBar completed={70} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                     </Grid>
                 </Grid>
             </Container>

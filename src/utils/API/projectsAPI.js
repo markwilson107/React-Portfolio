@@ -3,7 +3,7 @@ const ProjectsAPI =
     {
       id: "ED",
       name: "Employee Directory",
-      description: "This is React application loads user data from randomuser.me and displays it in an sortable, filterable table.",
+      description: "This React application loads user data from randomuser.me and displays it in an sortable, filterable table.",
       thumbnail: "./projects/ED.png",
       url: "https://markwilson107.github.io/Employee-Directory/",
       github: "https://github.com/markwilson107/Employee-Directory",
