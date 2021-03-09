@@ -30,17 +30,17 @@ function Bio(props) {
 
     let { handleModal } = React.useContext(ModalContext);
 
-    const preventDefault = (event) => event.preventDefault();
-
     return (
             <Container maxWidth="lg" className={`${classes.spacing}`}>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={6} className={`${classes.center}`}>
                         <img className="bio-img" src="./profile-image.jpg" />
                         <Typography variant="body2"><br />
-                        Hello, I am Mark Wilson, a Web Developer with a passion<br />
-                        for creating high-quality, responsive, beautiful websites<br />
-                        with the users experience being top priority.<br /><br />
+                        <strong>Hello, I'm Mark.</strong><br />
+                        An Australian Web Developer with a<br />
+                        passion for creating premium and intuitive<br />
+                        web experiences.<br /><br />Lets work together.<br /><br />
+
                             <Link style={{cursor: "pointer"}} onClick={() => {handleModal("pdf", './RESUME2020-MarkWilson.pdf')}}>
                                 <Tooltip title="Resume" placement="bottom">
                                     <DescriptionIcon style={{ color: "black", fontSize: 40 }} />
@@ -59,6 +59,7 @@ function Bio(props) {
                         </Typography>
                     </Grid>
                     <Grid item xs={12} md={6} >
+                        <br /><br />
                         <Typography variant="body1">HTML</Typography>
                         <ProgressBar completed={90} bgcolor={"#008cff"} isLabelVisible={0} borderRadius={0} />
                         <br />

@@ -14,7 +14,7 @@ const ProjectsAPI =
       name: "TCWA - Direct Ship",
       description: "Used to help TCWA staff keep track of requests sent from remote branches to the main warehouse.",
       thumbnail: "./projects/DS.jpg",
-      url: "https://direct-ship.herokuapp.com/signin",
+      url: "https://drive.google.com/file/d/1xQdremJkDyBVzHsy7R7OJlh0_ByNvnqe/view",
       github: "https://github.com/markwilson107/Direct-Ship",
       category: ["group", "javascript", "html", "css", "nodejs"]
     },
