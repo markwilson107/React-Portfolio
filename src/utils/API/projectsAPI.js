@@ -14,7 +14,7 @@ const ProjectsAPI =
       name: "TCWA - Direct Ship",
       description: "Used to help TCWA staff keep track of requests sent from remote branches to the main warehouse.",
       thumbnail: "./projects/DS.jpg",
-      url: "https://drive.google.com/file/d/1xQdremJkDyBVzHsy7R7OJlh0_ByNvnqe/view",
+      url: "https://direct-ship.herokuapp.com/",
       github: "https://github.com/markwilson107/Direct-Ship",
       category: ["group", "javascript", "html", "css", "nodejs"]
     },
@@ -53,16 +53,7 @@ const ProjectsAPI =
       url: "https://markwilson107.github.io/Weather-Dashboard/",
       github: "https://github.com/markwilson107/Weather-Dashboard",
       category: ["javascript", "html", "css", "api"]
-    },
-    // {
-    //   id: "PG",
-    //   name: "Password Generator",
-    //   description: "Random password generator created using HTML, CSS, and Javascript.",
-    //   thumbnail: "./projects/PG.jpg",
-    //   url: "https://markwilson107.github.io/Password-Generator/",
-    //   github: "https://github.com/markwilson107/Password-Generator",
-    //   category: ["javascript", "html", "css"]
-    // }
+    }
 ];
 
 export default ProjectsAPI;

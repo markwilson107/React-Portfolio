@@ -12,6 +12,9 @@ function GridItem(props) {
                 <Typography variant="h6" >{props.item.name}</Typography>
                 <br />
                 <Typography variant="body2">{props.item.description}</Typography>
+                {props.item.name === "TCWA - Direct Ship" ?
+                <Typography variant="body2">Email: demo@TCWA.com <br/> Password: Demo123</Typography>:
+                ""}
             </div>
             <div className="project-grid-buttons">
                 <ButtonGroup disableElevation variant="contained">
